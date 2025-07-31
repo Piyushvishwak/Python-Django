@@ -1,0 +1,36 @@
+body {
+    background-color: #08153d;
+    color: #FFFFFF;
+}
+
+h1, h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #b5b5b5;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p, #links{
+    color: grey;
+    text-align: center;
+    font-family: cursive;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lists{
+    color: grey;
+    text-align: center;
+    font-family: cursive;
+    font-weight: lighter;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
