@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple AJAX POST</title>
+</head>
+<body>
+    <h2>AJAX POST Example</h2>
+    <button id="sendBtn">Send POST</button>
+    <p>Response: <span id="response"></span></p>
+
+    <script>
+    document.getElementById("sendBtn").addEventListener("click", function() {
+        fetch("/ajax-view/", {
+            method: "POST"
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log("Server Response:", data);
+            document.getElementById("response").innerText = data.result;
+        })
+        .catch(error => console.error("Fetch Error:", error));
+    });
+</script>
+
+</body>
+</html>
