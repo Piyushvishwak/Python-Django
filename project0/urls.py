@@ -25,4 +25,7 @@ urlpatterns = [
     path('about/', views.About, name='about'),
     path('contact/', views.Contact, name='contact'),
     path('chai/', include('chai.urls')),
+    path('myapp/', include('myapp.urls')),
+    path('student/', include('student.urls')),
+    path('faculty/', include('faculty.urls')),
 ]

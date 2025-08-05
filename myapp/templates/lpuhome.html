@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    LPU Home
+{% endblock %}
+
+{% block content %}
+    <h1>Good Morning {{data}}! The time is 11:11 PM </h1>
+    <ul>
+        {% for f in data %}
+            <li>{{f}}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
