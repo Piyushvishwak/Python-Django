@@ -1,7 +1,76 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #b9f7e1;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
-.card img {
+
+.navbar {
+    background: linear-gradient(90deg, #f184f7, #9f8ffa);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    background: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     height: 200px;
     object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #b580fb;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #b97bf4;
+}
+
+h2, h5 {
+    color: #8d70ff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-body h4 {
+    color: #de8ef4;
+}
+
+footer {
+    background-color: #ba86f6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+footer {
+    background: linear-gradient(90deg, #9f8ffa, #f184f7);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 30px;
 }

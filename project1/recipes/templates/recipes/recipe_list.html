@@ -1,11 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
-<h2 class="mb-4 text-center">All Recipes</h2>
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="text-center">All Recipes</h2>
+    <a href="/admin/recipes/recipe/add/" class="btn btn-success" target="_blank">➕ Add New Recipe</a>
+</div>
 <div class="row">
     {% for recipe in recipes %}
     <div class="col-md-4 mb-3">
-        <div class="card">
-            <img src="{{ recipe.image }}" class="card-img-top" alt="Recipe Image">
+        <div class="card h-100">
+            <img src="{{ recipe.image_url }}" class="card-img-top" alt="Recipe Image">
             <div class="card-body">
                 <h5 class="card-title">{{ recipe.title }}</h5>
                 <p class="card-text">{{ recipe.description }}</p>
@@ -14,7 +17,7 @@
         </div>
     </div>
     {% empty %}
-    <p>No recipes available.</p>
+    <p class="text-center">No recipes available.</p>
     {% endfor %}
 </div>
 {% endblock %}
