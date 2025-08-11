@@ -5,7 +5,9 @@ class Recipe(models.Model):
     description = models.TextField()
     ingredients = models.TextField()
     instructions = models.TextField()
-    image_url = models.URLField(max_length=500, blank=True, null=True)  # ✅ allows blank
+    image_url = models.URLField(max_length=500, blank=True, null=True)
 
+    is_approved = models.BooleanField(default=False)
+    
     def __str__(self):
         return self.title

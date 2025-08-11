@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Recipe</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+<div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg">
+    <h2 class="text-2xl font-bold mb-4">Add a New Recipe</h2>
+    
+    <form method="post" class="space-y-4">
+        {% csrf_token %}
+        
+        <!-- Title -->
+        <div>
+            <label class="block font-medium mb-1">Title</label>
+            {{ form.title }}
+        </div>
+
+        <!-- Description -->
+        <div>
+            <label class="block font-medium mb-1">Description</label>
+            {{ form.description }}
+        </div>
+
+        <!-- Ingredients -->
+        <div>
+            <label class="block font-medium mb-1">Ingredients</label>
+            {{ form.ingredients }}
+        </div>
+
+        <!-- Instructions -->
+        <div>
+            <label class="block font-medium mb-1">Instructions</label>
+            {{ form.instructions }}
+        </div>
+
+        <!-- Image URL -->
+        <div>
+            <label class="block font-medium mb-1">Image URL</label>
+            {{ form.image_url }}
+        </div>
+
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition">
+            Submit Recipe
+        </button>
+    </form>
+</div>
+
+</body>
+</html>

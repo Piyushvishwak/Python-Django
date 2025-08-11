@@ -2,7 +2,7 @@
 {% block content %}
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h2 class="text-center">All Recipes</h2>
-    <a href="/admin/recipes/recipe/add/" class="btn btn-success" target="_blank">➕ Add New Recipe</a>
+    <a href={% url 'add_recipe' %} class="btn btn-success" target="_blank">➕ Add New Recipe</a>
 </div>
 <div class="row">
     {% for recipe in recipes %}
